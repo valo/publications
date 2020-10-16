@@ -34,7 +34,7 @@ by [Valentin Mihov](https://twitter.com/valentinmihov)
   - [Disclaimer](#disclaimer)
 
 ## Summary
-I did a security review of Dracula Protocol smart contract in the interval 13th-16th October 2020 for a total of 4 man/days. The review was done on the repository with SHA [9f1c590b0031c3628c4c67f2f8edb4e6b4defb11](https://github.com/Dracula-Protocol/contracts/tree/9f1c590b0031c3628c4c67f2f8edb4e6b4defb11). The code of the protocol is a fork of the famous [Sushiswap](https://github.com/sushiswap/sushiswap) protocol with significant changes around some of the areas.
+I did a security review of [Dracula Protocol](https://dracula.sucks/) smart contract in the interval 13th-16th October 2020 for a total of 4 man/days. The review was done on the repository with SHA [9f1c590b0031c3628c4c67f2f8edb4e6b4defb11](https://github.com/Dracula-Protocol/contracts/tree/9f1c590b0031c3628c4c67f2f8edb4e6b4defb11). The code of the protocol is a fork of the famous [Sushiswap](https://github.com/sushiswap/sushiswap) protocol with significant changes around some of the areas.
 
 The review didn’t find any major security issues in the contract. There is one medium level issue, which allows to arbitrage the `drain` function market orders against Uniswap and several low level vectors of attack, but all of these are infeasible to execute as they need to go through a timelock embedded in the contract and can be detected in time.
 
